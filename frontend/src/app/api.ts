@@ -37,13 +37,14 @@ export interface TrackEvent {
   user_name: string;
 }
 
-const API_URL = import.meta.env.VITE_API_URL ?? "http://localhost:3001";
+const API_URL = import.meta.env.VITE_API_URL ?? "";
+const WS_URL = import.meta.env.VITE_WS_URL ?? "wss://voice-of-nurai-production.up.railway.app/ws";
 const BOT_USERNAME = import.meta.env.VITE_TELEGRAM_BOT_USERNAME ?? "nurai_safety_bot";
 
 export const config = {
   apiUrl: API_URL,
   botUrl: `https://t.me/${BOT_USERNAME}`,
-  wsUrl: API_URL.replace(/^http/, "ws") + "/ws",
+  wsUrl: WS_URL,
 };
 
 export class ApiError extends Error {
