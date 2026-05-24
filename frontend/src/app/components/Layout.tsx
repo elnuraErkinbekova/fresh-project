@@ -20,7 +20,7 @@ const navItems = [
 
 export default function Layout({ activePath, children, user, onLogout }: LayoutProps) {
   return (
-    <div className="min-h-screen bg-slate-50 text-slate-950">
+    <div className="flex min-h-screen flex-col bg-slate-50 text-slate-950">
       <header className="sticky top-0 z-50 border-b border-slate-200 bg-white/95 backdrop-blur">
         <div className="mx-auto flex max-w-7xl items-center justify-between gap-4 px-4 py-3">
           <a href="/" className="flex items-center gap-3" aria-label="Voice of Nurai">
@@ -74,9 +74,9 @@ export default function Layout({ activePath, children, user, onLogout }: LayoutP
         </div>
       </header>
 
-      <main>{children}</main>
+      <main className="flex-1">{children}</main>
 
-      <footer className="mt-16 border-t border-slate-200 bg-white">
+      <footer className="mt-auto border-t border-slate-200 bg-white">
         <div className="mx-auto flex max-w-7xl flex-col gap-3 px-4 py-8 text-sm text-slate-600 md:flex-row md:items-center md:justify-between">
           <span>Voice of Nurai — платформа безопасности и поддержки.</span>
           <span>Экстренные номера Кыргызстана: 112, 102, 103</span>

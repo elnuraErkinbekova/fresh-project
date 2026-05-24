@@ -53,7 +53,7 @@ export default function HomePage({ user, lat, lng }: HomePageProps) {
 								помогает быстро позвать на помощь
 							</span>
 						</h1>
-						<p className="mt-5 max-w-2xl text-lg leading-8 text-slate-600">
+						<p className="mt-5 max-w-2xl mx-auto text-lg leading-8 text-slate-600">
 							Отправляйте SOS близким, делитесь текущей геолокацией, сообщайте
 							об опасных местах и получайте подсказки AI-помощника.
 						</p>
